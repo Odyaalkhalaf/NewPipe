@@ -31,11 +31,11 @@ kotlin {
 
 configure<ApplicationExtension> {
     compileSdk = 36
-    namespace = "org.schabi.newpipe"
+    namespace = "com.adamteam.app"
 
     defaultConfig {
-        applicationId = "org.schabi.newpipe"
-        resValue("string", "app_name", "NewPipe")
+        applicationId = "com.adamteam.app"
+        resValue("string", "app_name", "ادم تيم")
         minSdk = 23
         targetSdk = 35
 
@@ -61,17 +61,17 @@ configure<ApplicationExtension> {
             if (normalizedWorkingBranch.isEmpty() || workingBranch in defaultBranches) {
                 // default values when branch name could not be determined or is master or dev
                 applicationIdSuffix = ".debug"
-                resValue("string", "app_name", "NewPipe Debug")
+                resValue("string", "app_name", "ادم تيم Debug")
             } else {
                 applicationIdSuffix = ".debug.$normalizedWorkingBranch"
-                resValue("string", "app_name", "NewPipe $workingBranch")
+                resValue("string", "app_name", "ادم تيم $workingBranch")
             }
         }
 
         release {
             System.getProperty("packageSuffix")?.let { suffix ->
                 applicationIdSuffix = suffix
-                resValue("string", "app_name", "NewPipe $suffix")
+                resValue("string", "app_name", "ادم تيم $suffix")
             }
             isMinifyEnabled = true
             isShrinkResources = true

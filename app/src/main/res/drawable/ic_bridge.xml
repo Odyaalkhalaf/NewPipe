@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Stylized silhouette of a simple arched bridge (Deir ez-Zor inspired) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M5,60 L95,60 L95,70 L5,70 Z"/>
+
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M5,60 C20,30 80,30 95,60 L88,60 C75,38 25,38 12,60 Z"/>
+
+    <!-- small pillars -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M18,60 L22,60 L22,48 L18,48 Z M38,60 L42,60 L42,50 L38,50 Z M58,60 L62,60 L62,48 L58,48 Z M78,60 L82,60 L82,50 L78,50 Z"/>
+
+</vector>
